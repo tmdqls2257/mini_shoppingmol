@@ -1,0 +1,96 @@
+@import 'reset.css';
+
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space: 8px;
+  --size-button: 60px;
+  --size-border: 4px;
+  --size-thumbnail: 50px;
+  --font-size: 18px;
+
+  /* annimation */
+  --animation-duration: 300ms;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.logo:hover,
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  transition: transform 500ms ease;
+  cursor: pointer;
+  border-radius: var(--size-border);
+  border: none;
+  background-color: transparent;
+  margin-right: var(--base-space);
+}
+
+.btn img {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+
+.colorbtn {
+  padding: calc(var(--base-space) * 2);
+  align-items: center;
+  font-size: var(--font-size);
+}
+.blue {
+  background-color: var(--color-blue);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+.pink {
+  background-color: var(--color-pink);
+}
+
+li img {
+  margin-left: var(--base-space);
+
+  width: var(--size-button);
+  margin-right: var(--base-space);
+}
+
+ul {
+  width: 60%;
+  height: 60%;
+  margin-top: var(--base-space);
+  list-style: none;
+}
+li {
+  font-size: var(--font-size);
+  display: flex;
+  background-color: var(--color-white);
+  align-items: center;
+}
